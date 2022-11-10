@@ -1,0 +1,286 @@
+/*--------------------------------------------HEADER STYLE 9--------------------------------------------*/
+.header-style9{
+	.currency_w > li > a,
+	#lang_sel > ul.nav > li > a{
+		color: #222222;
+		&:after{
+			color: #222222;		
+		}
+	}
+	.top-header{
+		position: relative;
+	}
+	.login-top{
+		margin-right: 33px;
+		.top-login{
+			.div-logined{
+				a{
+					color: #222222;
+					&:before{
+						content: '\f023';
+						font-family: FontAwesome;
+						display: inline-block;
+						margin-right: 8px;
+					}
+				}
+			}
+			ul{
+				margin: 0;
+				li{
+					list-style: none;
+					a{
+						color: #222222;
+						&:before{
+							content: '\f023';
+							font-family: FontAwesome;
+							display: inline-block;
+							margin-right: 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+	ul#menu-my-account > li{
+		border: none;
+		&:first-child{
+			border: none;
+		}
+		a{
+			color: #222222;
+			padding: 0;
+			&:before{
+				content: '\f007';
+				font-family: FontAwesome;
+				display: inline-block;
+				margin-right: 8px;
+			}
+			&:after{
+				color: #222222;
+			}
+		}
+		ul.dropdown-menu{
+			left: auto;
+			right: 0;
+			width: 140px;
+		}
+	}
+	.furnicom_social{
+		ul{
+			overflow: hidden;
+			margin-bottom: 0;
+			background: none;
+			li{
+				display: inline-block;
+				float: left;
+				a{
+					display: block;
+					padding: 0 10px;
+					color: #858585;
+					line-height: 40px;
+					&:hover{
+						color: @color;
+					}
+				}
+			}
+		}
+	}
+	.sw_ajax_woocommerce_search{
+	 	float: left;
+		.top-search{
+			display: none;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			top: 70px;
+			left: 0;
+			width: 100%;
+			&.open{
+				display: block;
+			}
+		}
+		.button-ajax-search{
+			display: block;
+			padding: 0 15px;
+			line-height: 30px;
+		    border-right: 1px solid #dddddd;
+		    margin: 26px 0 10px;
+			font-size: 16px;
+			color: #999999;
+			height: 30px;
+			&:hover{
+				color: @color;
+			}			
+		}
+		.rtl &{
+			float: right;
+			.button-ajax-search{
+				border-left: 1px solid #dddddd;
+				border-right: 0;
+			}
+		}
+	}
+	.furnicom-top-search{
+	 	position: relative;
+	 	float: left;
+		h3{
+			font-size: 0;
+			padding: 6.5px 15px;
+		    border-right: 1px solid #dddddd;
+		    margin: 26px 0 10px;
+			display:inline-block;
+			&:before{
+				content: "\f002";
+				font-family: FontAwesome;
+				font-size: 16px;
+				color: #999999;
+				cursor: pointer;
+			}
+		}
+		.top-search{
+			display: none;
+			border-right: 0;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+		    top: 65px;
+		    right: 0;
+		    z-index: 1000;
+		    .topsearch-entry{
+		    	.form-search{
+		    		border: 1px solid #e1e1e1;
+		    		overflow: hidden;
+		    		width: 435px;
+		    		background: #fff;
+		    		padding: 10px 20px 10px;
+		    		.search-query{
+	    			    font-size: 13px;
+						color: #939393;
+		    			border: none;
+		    			border-radius: 0;
+		    			padding: 0;
+					    margin: 0;
+					    line-height: normal;
+					    float: left;
+					    width: 90%;
+		    		}
+		    	}
+		    	.button-search-pro{
+		    		background: none;
+				    border: none;
+				    border-radius: 0;
+					position:absolute;
+				    margin: 0;
+				    padding: 0;
+				    &:before{
+						content:'';
+						font-family:'FontAwesome';
+				    	font-size: 12px;
+				    	color: #494949;
+				    }
+				    &:hover{
+				    	&:before{
+				    		color: @color;
+				    	}
+				    }
+		    	}
+		    }
+		}
+	}
+	.top-form.top-form-minicart{
+		padding: 31px 0 28px 15px;
+		float: left;
+		.top-minicart-icon{
+			background: none;
+		    width: auto;
+			padding-bottom: 0;
+			position: relative;
+			p.icon-cart{
+				background: url(@{url}/cart-style2.png) no-repeat;
+				margin: 0;
+				width: 25px;
+			}
+			a{
+				font-weight: 700;
+				font-size: 12px;
+				color: #404040;
+				border: 1px solid #e6e6e6;
+				background: #fafaf8;
+				border-radius: 50%;
+				position: absolute;
+				top: -10px;
+				right: -10px;
+				height: 22px;
+				width: 22px;
+				margin: 0;
+			    padding: 0;
+			    line-height: 22px;
+			}
+		}
+		.wrapp-minicart{
+			top: 55px;
+			.minicart-padding{
+				.minicart-title:before{
+					right: 10px;
+					left: auto;
+					.rtl &{
+						left: 10px;
+						right: auto;
+					}
+				}
+			}
+		}
+	}
+	.above-header9{
+		float: right;
+	}
+	.wrap-top-header{
+		border-bottom: 1px solid #dddddd;
+		.top-header{
+			.furnicom-logo{
+				a{
+					display: block;
+					padding: 19px 0 20px;
+					margin-right: 71px;
+				}
+			}
+		}
+	}
+	.primary-menu{
+		padding: 20px 0 11px;
+		.navbar-inner .nav > li{
+			> a{
+				font-size: 14px;
+				color: #222222;
+				padding: 0 14px;
+				line-height: 50px;
+			}
+			&.active{
+				a{
+					color: @color;
+					background: none;
+				}
+			}
+			&:first-child{
+				a{
+					padding-left: 0;
+				}
+			}
+			&:hover{
+				a{
+					color: @color;
+					background: none;
+				}
+			}
+		}
+	}
+	.furnicom_social{
+		margin: 26px 0 0px;
+		border-right: 1px solid #dddddd;
+		ul li a{
+		    padding: 4px 10px 0px;
+		    line-height: normal;
+		    font-size: 16px;
+		}
+	}
+}

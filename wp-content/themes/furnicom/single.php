@@ -1,0 +1,1 @@
+<?php furnicom_content_detail_check() ?>

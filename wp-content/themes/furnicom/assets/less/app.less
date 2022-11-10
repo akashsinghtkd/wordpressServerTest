@@ -1,0 +1,336 @@
+	// load bootstrap.less included variables.less & mixins.less
+/* ==========================================================================
+   Base
+   ========================================================================== */
+@font-face {
+    font-family: 'PacificoRegular';
+    src: url('../fonts/PacificoRegular.eot');
+    src: url('../fonts/PacificoRegular.eot') format('embedded-opentype'),
+         url('../fonts/PacificoRegular.woff2') format('woff2'),
+         url('../fonts/PacificoRegular.woff') format('woff'),
+         url('../fonts/PacificoRegular.ttf') format('truetype'),
+         url('../fonts/PacificoRegular.svg#PacificoRegular') format('svg');
+}   
+*, html{
+	outline: none !important;
+}
+.page-template-page-home3{
+    background: #ffffff !important;
+}
+body{
+	background: #eeeeee;
+	color: @body-color;
+	font-size: 12px;
+	font-family: 'Arial', Helvetica,sans-serif;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	a{
+		color: #444444;
+        .transition(all .2s linear);
+		&:hover{
+			color: @color;
+			text-decoration: none;
+		}
+		&:focus{
+			text-decoration: none;
+		}
+	}
+	
+	h1, h2, h3, h4, h5, h6{
+		margin: 0 0 10px;
+		font-weight: 700;
+		font-family: inherit;
+	}
+	a{
+		outline: medium none !important;
+	}
+	input, textarea, button {
+		outline: medium none !important;
+		border: 1px solid @border-color;
+		margin-bottom: 10px;
+		.border-radius(4px);
+		padding: 0px 5px;
+	}
+	img{
+		.img-responsive();
+		  display: block;
+          max-width: 100%;
+          height: auto;
+	}
+	ul{
+		padding: 0;
+	}
+	ul, ol{
+        margin-left: 15px;
+    }
+	ol{
+		padding-left: 15px;
+	}
+	.entry-content{
+		ul, ol{
+			li{
+				list-style: inherit;
+			}
+		}
+	}
+	.container{
+	   padding:0;
+	}
+    &.archive, &.single, &.page, &.error404{
+        background: #eee;
+    }
+    &.archive, &.single, &.error404{
+        .header-style2 .top-header{
+            top: 0;
+        }
+    }
+    &.page-home{
+        background: #fff;
+    }
+}
+table{
+	margin-bottom: 10px;
+	td, th{
+		padding: 10px;
+	}
+}
+dl dd{
+	margin-bottom: 10px;
+}
+img.vc_single_image-img{
+    &:hover{
+        opacity: 0.8;
+    }
+}
+:focus {
+    outline: none;
+    background: none;
+}
+a:focus{
+    outline: none;
+    background: none;    
+}
+.float{
+    float: none;
+}
+:focus {
+    outline: none;
+}
+.archive,
+.single{
+   .body-wrapper.box-layout{
+    background: none;
+   }
+}
+.body-wrapper{
+	overflow: hidden;
+	&.box-layout {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px rgba(15,11,12,0.1);
+    overflow: hidden;
+    background: #ffffff;
+	}
+}
+.box-layout .vc_row-no-padding {
+    width: 100% !important;
+    margin: 0;
+    left: 0 !important;
+    right: 0 !important;
+}
+#main{
+    .breadcrumbs{
+        display: none;
+    }
+    #contents{
+        header{
+            display: none;
+        }
+    }
+}
+.bread{
+    .breadcrumbs{
+        display: block !important;
+    } 
+}
+.theme-clearfix:after{
+	height: 0;
+	clear: both;
+	content: " ";
+	font-size: 0;
+	min-height: 0;
+	display: block;
+	visibility: hidden;
+}
+.float{
+    float: none !important;   
+}
+.modal{
+    z-index: 99999;
+}
+/* Images in content post*/
+.thumbnail{
+	max-width: 100%;
+}
+.size-full {
+    width:100%;
+    height:auto;
+    margin:0 0 30px 0;
+}
+figure .size-full {
+    margin: 0;
+}
+.alignleft {
+    float: left;
+    margin:0 15px 30px 0;
+    .rtl &{
+    	float: right;
+    	margin: 0 0 30px 15px;
+    }
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 30px auto;
+	clear: both;
+}
+.alignright {
+    float: right;
+    margin:0 0 30px 15px;
+    .rtl &{
+    	float: left;
+    	margin: 0 15px 30px 0;
+    }
+}
+.alignnone {
+    float: none;
+	clear: both;
+    display:block;
+}
+p{
+    color: #545454;
+    font-size: 12px;
+}
+p .size-full {
+    width: auto;
+    height:auto;
+}
+p .alignleft {
+    float: left;
+    .rtl &{
+    	float: right;
+    }
+}
+p .aligncenter {
+    display: block;
+}
+p .alignright {
+    float: right;
+    margin:5px 0 30px 15px;
+    .rtl &{
+     	float: left;
+    }
+}
+p .alignnone {
+    float: none;
+    display:block;
+}
+figure.wp-caption{
+	margin-bottom: 5px;
+}
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.popup-image{
+    img{
+        margin: 0;
+    }
+}
+ul.menu, .dropdown ul{
+	list-style: none;
+}
+.nav>li>a:hover, .nav>li>a:focus{
+    background: none;
+}
+tbody tr td{
+    font-size: 14px;
+}
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li{
+    margin-bottom: 0;
+}
+.slick-slide{
+    height: auto;
+}
+//map
+.wpb_map_wraper iframe{
+     pointer-events: none;
+}
+.compose-mode .vc_controls>.vc_controls-cc{
+    top: 30px !important;
+}   
+.loading{
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+    &:before{
+        background: url(../assets/img/loadingp.gif) no-repeat center center #fff;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        display: block;
+        .rtl & {
+            left: 0 !important;
+            right: 0 !important;
+        }
+    }
+}
+
+
+@import "app/mixins.less";
+@import "flexbox.less";
+@import "app/language_click.less";
+/*	===================================================================
+	content
+	===================================================================	*/
+@import "app/_header.less";
+@import "app/_header4.less";
+@import "app/_header5.less";
+@import "app/_menu.less";
+@import "app/_res_menu.less";
+@import "app/_search.less";
+@import "app/woocommerce.less";
+@import "app/product_quick_view.less";
+@import "app/product_variation.less";
+@import "app/_widgets.less";
+@import "app/content.less";
+@import "app/_pages.less";
+@import "app/_portfolio.less";
+@import "app/shortcodes.less";
+@import "app/shortcodes4.less";
+@import "app/shortcodes5.less";
+@import "app/update_home6.less";
+@import "app/update_home7.less";
+@import "app/update_home9.less";
+@import "app/update_home10.less";
+@import "app/style-mobile-1.less";
+@import "app/wc_marketplace.less";
+@import "app/wc_vendor.less";
+@import "app/dokan_vendor.less";
+@import "app/_footer.less";
+
+
+
+

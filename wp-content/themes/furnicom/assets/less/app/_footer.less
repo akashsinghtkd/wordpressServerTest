@@ -1,0 +1,246 @@
+/*------------------------------Footer------------------------------*/
+.footer{
+	background: url('../assets/img/bg-footer.png') no-repeat;
+	position: relative;
+	.footer-top{
+		overflow: hidden;
+		.widget{
+			padding-top: 35px;
+			margin-bottom: 0;
+			.button-ver-menu{
+				 font-weight: 700;
+				font-size: 14px;
+				text-transform: uppercase;
+				color: #fff;
+				position: relative;
+				margin-bottom: 28px;
+				&:after{
+					content: '';
+					height: 3px;
+					width: 40px;
+					background: @color;
+					position: absolute;
+					bottom: -16px;
+					left: 0;
+				}
+			}
+		}
+		.widget_nav_menu{
+			.menu{
+				li{
+					a{
+						font-size: 12px;
+						border-bottom: 0;
+						color: #fff;
+						padding: 6px 0;
+						text-transform:capitalize;
+						&:before{
+							content: '\f0da';
+							font-family: FontAwesome;
+							display: inline-block;
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+		.widget_text{
+			background: fadeout(@color, 30%);
+			padding-left: 24px;
+			padding-bottom: 20px;
+			.button-ver-menu{
+				padding-left: 6px;
+				&:after{
+					left: 6px;
+				}
+			}
+			.contact-footer{
+				ul{
+					margin-bottom: 20px;
+					margin-left: 6px;
+					li{
+						line-height: 26px;
+						span{
+							line-height: 26px;
+						}
+						.fa{
+							margin-right: 13px;
+							margin-top: 7px;
+							padding-left: 1px;
+						}
+					}
+				}
+			}
+		}
+		.contact-footer{
+			ul li{
+				font-size: 12px;
+				color: #fff;
+				clear: both;
+				overflow: hidden;
+				a{
+					color: #fff;
+				}
+				.fa{
+					color: #fff;
+					margin-right: 21px;
+				}
+				.fa-map-marker, 
+				span{
+					float: left;
+				}
+			}
+		}
+	}
+	.footer-bottom{
+		padding-top: 19px;
+		.widget_text{
+			h3{
+				font-size: 16px;
+				color: #fff;
+			}
+			&:first-child{
+				.widget-inner{
+					float: right;
+					text-align: right;
+				}
+			}
+		}
+		.app-store{
+			a{
+				float: left;
+				&:first-child{
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+.shop-social{
+	ul{
+		li{
+			float: left;
+			display: inline-block;
+			a{
+				font-size: 14px;
+				display: block;
+			    height: 40px;
+			    width: 40px;
+			    text-align: center;
+			    line-height: 40px;
+			    margin-right: 10px;
+			   	margin-bottom: 10px;
+			    background-color: #000;
+			    color: #fff;
+			    border-radius: 3px;
+			    .transition(all 0.3s ease-in);
+			    &:hover{
+			    	color: #fff;
+			    	background-color: @color;
+			    }
+			    .fa{
+			    	line-height: 40px;
+			    }
+			}
+		}
+	}
+}
+.copyright-text{
+	text-align: center;
+	p{
+		color: #fff;
+		a{
+			color: @color;
+		}
+	}
+}
+.btt{
+	bottom: 30px;
+    right: 30px;
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    #furnicom-totop {
+    	a{
+    		background: url("../assets/img/bg_general.png") no-repeat scroll center -1948px @color;
+		    border-radius: 0;
+		    height: 50px;
+		    width: 50px;
+		    display: inline-block;
+		    border-radius: 100%;
+		    &:hover {
+		        background-color:lighten(@color, 10%)
+		    }
+    	}
+	    .des{
+	    	font-size: 12px;
+	    	text-transform: uppercase;
+	    	color: #fff;
+	    }
+	}
+}
+.footer.footer-style5{
+	background: #272727;
+	.menu-footer{
+		background: #1d1d1d;
+		padding: 22px 0 20px;
+		border-bottom: 1px solid #242526;
+		.widget{
+			margin: 0;
+		}
+		.widget_nav_menu{
+			ul{
+				margin: 16px 0 0 48px;
+				li{
+					display: inline-block;
+					a{
+						font-size: 14px;
+						text-transform: uppercase;
+						color: #ffffff;
+						font-weight: 600;
+						padding: 0 24px;
+						border: none;
+						&:hover{
+							color: @color;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer-top{
+		border-bottom: 1px solid #3d3d3d;
+    	padding-bottom: 20px;
+		.widget{
+			padding-top: 66px;
+			.button-ver-menu{
+				color: #fff;
+			}
+		} 
+		.widget_nav_menu .menu li a{
+			color: #fff;
+		}
+		.contact-footer ul li{
+			color: #fff;
+			a{
+				color: #fff;
+			}
+			.fa{
+				color: #fff;
+			}
+		}
+	} 
+	.footer-bottom{
+		border: none;
+		.widget_text h3{
+			color: #fff;
+		}
+	} 
+	.copyright{
+		background: #1d1d1d;
+		border-top: 1px solid #343434;
+	}
+	.copyright-text p{
+		color: #fff;
+	}
+}
